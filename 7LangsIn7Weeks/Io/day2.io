@@ -10,3 +10,7 @@ fib2 := method(n,
 		f0 = f1;
 		f1 = result;
 		)))
+
+Number div := method(n, if(n==0, 0, /(n)))
+OperatorTable addOperator("div", 2)
+
