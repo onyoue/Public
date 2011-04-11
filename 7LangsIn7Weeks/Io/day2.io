@@ -14,3 +14,6 @@ fib2 := method(n,
 Number div := method(n, if(n==0, 0, /(n)))
 OperatorTable addOperator("div", 2)
 
+List sum2 := method(map(v, v sum) sum)
+# ab := list(list(1,2), list(3,4))
+# ab sum2
