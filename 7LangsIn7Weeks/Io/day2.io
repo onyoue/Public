@@ -45,3 +45,16 @@ Array2 get := method(x, y,
 Array2 set := method(x, y, value,
 	row := at(y);
 	row atPut(x, value))
+
+Array2 write := method(filename,
+	f := File with(filename);
+	f remove;
+	f openForAppending;
+	justSerialized(f);
+	f close)
+	
+# a := dim(3,3)
+# a write("tekitou.io")
+# b := doFile("tekitou.io")
+
+
