@@ -19,3 +19,12 @@ Builder ul(
 	li("Io"),
 	li("Lua"),
 	li("javaScript"))
+
+curlyBrackets := method(
+	r := List clone
+	call message arguments foreach(arg,
+		r append(arg)
+		)
+	r
+)
+
