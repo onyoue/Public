@@ -262,7 +262,11 @@ public class GLSLLanguageHierarchy extends LanguageHierarchy<GLSLTokenId> {
         if (idToToken == null) {
             init();
         }
-        return idToToken.get(id);
+        GLSLTokenId tokenId = idToToken.get(id);
+        if (tokenId == null) {
+            tokenId =  idToToken.get(JavaParserConstants.IDENTIFIER);
+        }
+        return tokenId;
     }
 
     protected synchronized Collection<GLSLTokenId> createTokenIds() {

@@ -81,7 +81,11 @@
                     </run-dependency>
                 </dependency>
             </module-dependencies>
-            <public-packages/>
+            <public-packages>
+                <package>glsledit</package>
+                <package>glsledit.jcclexer</package>
+                <package>glsledit.lexer</package>
+            </public-packages>
         </data>
     </configuration>
 </project>
