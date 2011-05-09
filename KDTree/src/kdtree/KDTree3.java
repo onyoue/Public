@@ -2,7 +2,6 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package kdtree;
 
 import java.util.ArrayList;
@@ -16,22 +15,24 @@ import javax.vecmath.Vector3f;
  * @author onyoue
  */
 public class KDTree3 {
+
     enum Flag {
+
         LEAF,
         X,
         Y,
-        Z,
-    }
+        Z,}
 
     class AABB {
+
         public Vector3f min;
         public Vector3f max;
     }
 
     class KDTNode {
+
         public int pointIndex;
         public Flag flag = Flag.LEAF;
-
     }
 
     private class XComparator implements Comparator<Integer> {
@@ -60,13 +61,23 @@ public class KDTree3 {
             return (v.z > v1.z) ? 1 : -1;
         }
     }
+    private Vector3f[] _points;
+    private Integer[] _pointIndices;
+    private KDTNode[] _nodes;
+    private float _d2 = 0;
+    private Vector3f _target;
+    private List<Integer> _result = new ArrayList<Integer>();
+    private Vector3f tmp = new Vector3f();
+    private Comparator<Integer> _xComparator;
+    private Comparator<Integer> _yComparator;
+    private Comparator<Integer> _zComparator;
 
     public KDTree3() {
         _xComparator = new XComparator();
         _yComparator = new YComparator();
         _zComparator = new ZComparator();
     }
-    
+
     private AABB computeBoundingBox(int start, int end) {
 
         Vector3f min = new Vector3f(Float.MAX_VALUE, Float.MAX_VALUE, Float.MAX_VALUE);
@@ -102,13 +113,13 @@ public class KDTree3 {
         Flag flag;
         if (range.x > range.y && range.x > range.z) {
             flag = Flag.X;
-            Arrays.sort(_pointIndices, start, end+1, _xComparator);
+            Arrays.sort(_pointIndices, start, end + 1, _xComparator);
         } else if (range.y > range.z) {
             flag = Flag.Y;
-            Arrays.sort(_pointIndices, start, end+1, _yComparator);
+            Arrays.sort(_pointIndices, start, end + 1, _yComparator);
         } else {
             flag = Flag.Z;
-            Arrays.sort(_pointIndices, start, end+1, _zComparator);
+            Arrays.sort(_pointIndices, start, end + 1, _zComparator);
         }
 
         int mid = start + (end - start + 1) / 2;
@@ -123,17 +134,17 @@ public class KDTree3 {
                 left.pointIndex = _pointIndices[start];
                 _nodes[leftIndex(nodeIndex)] = left;
             } else {
-                generate(leftIndex(nodeIndex), start, mid-1);
+                generate(leftIndex(nodeIndex), start, mid - 1);
             }
         }
 
         if (mid != end) {
-            if (mid+1 == end) {
+            if (mid + 1 == end) {
                 KDTNode right = new KDTNode();
                 right.pointIndex = _pointIndices[end];
                 _nodes[rightIndex(nodeIndex)] = right;
             } else {
-                generate(rightIndex(nodeIndex), mid+1, end);
+                generate(rightIndex(nodeIndex), mid + 1, end);
             }
         }
     }
@@ -147,7 +158,7 @@ public class KDTree3 {
             _pointIndices[i] = i;
         }
 
-        generate(1, 0, points.length-1);
+        generate(1, 0, points.length - 1);
     }
 
     private void find(int nodeIndex) {
@@ -167,12 +178,12 @@ public class KDTree3 {
 
             if (delta < 0) {
                 find(leftIndex(nodeIndex));
-                if (delta*delta < _d2) {
+                if (delta * delta < _d2) {
                     find(rightIndex(nodeIndex));
                 }
             } else {
                 find(rightIndex(nodeIndex));
-                if (delta*delta < _d2) {
+                if (delta * delta < _d2) {
                     find(leftIndex(nodeIndex));
                 }
             }
@@ -219,64 +230,5 @@ public class KDTree3 {
 
     public static String vector3fToString(Vector3f v) {
         return Float.toString(v.x) + " " + Float.toString(v.y) + " " + Float.toString(v.z);
-    }
-
-    private Vector3f[] _points;
-    private Integer[] _pointIndices;
-    private KDTNode[] _nodes;
-
-    private float _d2 = 0;
-    private Vector3f _target;
-    private List<Integer> _result = new ArrayList<Integer>();
-
-    private Vector3f tmp = new Vector3f();
-    private Comparator<Integer> _xComparator;
-    private Comparator<Integer> _yComparator;
-    private Comparator<Integer> _zComparator;
-
-    public static void main(String[] args) {
-
-        Vector3f[] points = new Vector3f[10];
-        points[0] = new Vector3f(3, 5, 8);
-        points[1] = new Vector3f(1, 2, 9);
-        points[2] = new Vector3f(5, 1, 3);
-        points[3] = new Vector3f(2, 3, 4);
-        points[4] = new Vector3f(4, 4, 5);
-        points[5] = new Vector3f(7, 8, 1);
-        points[6] = new Vector3f(1, 9, 3);
-        points[7] = new Vector3f(6, 3, 3);
-        points[8] = new Vector3f(10, 3, 5);
-        points[9] = new Vector3f(10, 5, 6);
-
-        KDTree3 kdtree = new KDTree3();
-        kdtree.generate(points);
-        kdtree.dump(1, "");
-
-        Vector3f p = new Vector3f();
-        p.x = 5;
-        p.y = 3;
-        p.z = 5;
-        float dd = 4.0f;
-        List<Integer> result = kdtree.find(p, dd);
-
-        System.out.println("find target = " + vector3fToString(p));
-        System.out.println("result::::");
-        Vector3f a = new Vector3f();
-        for (Integer i : result) {
-            Vector3f v = points[i];
-            a.sub(v, p);
-            float d = a.length();
-            System.out.println(vector3fToString(v) + " | dist : " + Float.toString(d));
-        }
-
-        // brute force test
-        System.out.println("brute force result::::");
-        for (Vector3f v : points) {
-            a.sub(v, p);
-            float d = a.length();
-            if (d < dd) {
-                System.out.println(vector3fToString(v) + " | dist : " + Float.toString(d));
-            }
-        }
     }
 }
