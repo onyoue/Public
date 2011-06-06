@@ -20,3 +20,18 @@ module Main where
 		where colors = ["black", "white", "blue", "red"]
 		
 	multiTable = [(a, b, a * b) | a <- [1..12], b <- [1..12]]
+ 
+	mapTable = [[a,b,c,d,e] | a<-as, b<-bs, c<-cs, d<-ds, e<-es]
+		where 
+			states = ["Alabama", "Mississippi", "Georgia", "Tenessee", "Florida"]
+			colors = ["red", "green", "blue"]
+			lst = map (\x -> [(x, f) | f <- colors]) states
+			[as, bs, cs, ds, es] = lst
+			
+	validateMap [(_,a),(_,m),(_,g),(_,t),(_,f)] = 
+		m /= t && m /= a && a /= t && a /= m && a /= g && a /= f && g /= f && g /= t
+
+	validMapTable = filter validateMap mapTable
+
+
+
