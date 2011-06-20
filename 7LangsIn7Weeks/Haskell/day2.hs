@@ -19,3 +19,5 @@ module Main where
 	atoi s = foldl (\x carryOver -> carryOver + x * 10)
 		0
 		(map digitToInt (filter isDigit s))
+		
+ 
