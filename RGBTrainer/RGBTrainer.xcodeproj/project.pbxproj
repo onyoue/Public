@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8191AC41140542EF001CEEC6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8191AC40140542EF001CEEC6 /* UIKit.framework */; };
+		8191AC43140542EF001CEEC6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8191AC42140542EF001CEEC6 /* Foundation.framework */; };
+		8191AC45140542EF001CEEC6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8191AC44140542EF001CEEC6 /* CoreGraphics.framework */; };
+		8191AC4B140542EF001CEEC6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8191AC49140542EF001CEEC6 /* InfoPlist.strings */; };
+		8191AC4D140542EF001CEEC6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8191AC4C140542EF001CEEC6 /* main.m */; };
+		8191AC51140542EF001CEEC6 /* RGBTrainerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8191AC50140542EF001CEEC6 /* RGBTrainerAppDelegate.m */; };
+		8191AC54140542EF001CEEC6 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8191AC52140542EF001CEEC6 /* MainWindow.xib */; };
+		8191AC57140542EF001CEEC6 /* RGBTrainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8191AC56140542EF001CEEC6 /* RGBTrainerViewController.m */; };
+		8191AC5A140542EF001CEEC6 /* RGBTrainerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8191AC58140542EF001CEEC6 /* RGBTrainerViewController.xib */; };
+		8191AC62140542F0001CEEC6 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8191AC61140542F0001CEEC6 /* SenTestingKit.framework */; };
+		8191AC63140542F0001CEEC6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8191AC40140542EF001CEEC6 /* UIKit.framework */; };
+		8191AC64140542F0001CEEC6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8191AC42140542EF001CEEC6 /* Foundation.framework */; };
+		8191AC65140542F0001CEEC6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8191AC44140542EF001CEEC6 /* CoreGraphics.framework */; };
+		8191AC6D140542F0001CEEC6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8191AC6B140542F0001CEEC6 /* InfoPlist.strings */; };
+		8191AC6F140542F0001CEEC6 /* RGBTrainerTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 8191AC6E140542F0001CEEC6 /* RGBTrainerTests.h */; };
+		8191AC71140542F0001CEEC6 /* RGBTrainerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8191AC70140542F0001CEEC6 /* RGBTrainerTests.m */; };
+		819BA0B8140D9F580033D14A /* RGBTrainerBackGround.png in Resources */ = {isa = PBXBuildFile; fileRef = 819BA0B7140D9F580033D14A /* RGBTrainerBackGround.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8191AC66140542F0001CEEC6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8191AC33140542EF001CEEC6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8191AC3B140542EF001CEEC6;
+			remoteInfo = RGBTrainer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8191AC3C140542EF001CEEC6 /* RGBTrainer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RGBTrainer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8191AC40140542EF001CEEC6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8191AC42140542EF001CEEC6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8191AC44140542EF001CEEC6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8191AC48140542EF001CEEC6 /* RGBTrainer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RGBTrainer-Info.plist"; sourceTree = "<group>"; };
+		8191AC4A140542EF001CEEC6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8191AC4C140542EF001CEEC6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8191AC4E140542EF001CEEC6 /* RGBTrainer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RGBTrainer-Prefix.pch"; sourceTree = "<group>"; };
+		8191AC4F140542EF001CEEC6 /* RGBTrainerAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RGBTrainerAppDelegate.h; sourceTree = "<group>"; };
+		8191AC50140542EF001CEEC6 /* RGBTrainerAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RGBTrainerAppDelegate.m; sourceTree = "<group>"; };
+		8191AC53140542EF001CEEC6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		8191AC55140542EF001CEEC6 /* RGBTrainerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RGBTrainerViewController.h; sourceTree = "<group>"; };
+		8191AC56140542EF001CEEC6 /* RGBTrainerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RGBTrainerViewController.m; sourceTree = "<group>"; };
+		8191AC59140542EF001CEEC6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RGBTrainerViewController.xib; sourceTree = "<group>"; };
+		8191AC60140542F0001CEEC6 /* RGBTrainerTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RGBTrainerTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8191AC61140542F0001CEEC6 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		8191AC6A140542F0001CEEC6 /* RGBTrainerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RGBTrainerTests-Info.plist"; sourceTree = "<group>"; };
+		8191AC6C140542F0001CEEC6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8191AC6E140542F0001CEEC6 /* RGBTrainerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RGBTrainerTests.h; sourceTree = "<group>"; };
+		8191AC70140542F0001CEEC6 /* RGBTrainerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RGBTrainerTests.m; sourceTree = "<group>"; };
+		819BA0B7140D9F580033D14A /* RGBTrainerBackGround.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RGBTrainerBackGround.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8191AC39140542EF001CEEC6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8191AC41140542EF001CEEC6 /* UIKit.framework in Frameworks */,
+				8191AC43140542EF001CEEC6 /* Foundation.framework in Frameworks */,
+				8191AC45140542EF001CEEC6 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8191AC5C140542F0001CEEC6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8191AC62140542F0001CEEC6 /* SenTestingKit.framework in Frameworks */,
+				8191AC63140542F0001CEEC6 /* UIKit.framework in Frameworks */,
+				8191AC64140542F0001CEEC6 /* Foundation.framework in Frameworks */,
+				8191AC65140542F0001CEEC6 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8191AC31140542EF001CEEC6 = {
+			isa = PBXGroup;
+			children = (
+				819BA0B6140D9F580033D14A /* resource */,
+				8191AC46140542EF001CEEC6 /* RGBTrainer */,
+				8191AC68140542F0001CEEC6 /* RGBTrainerTests */,
+				8191AC3F140542EF001CEEC6 /* Frameworks */,
+				8191AC3D140542EF001CEEC6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8191AC3D140542EF001CEEC6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8191AC3C140542EF001CEEC6 /* RGBTrainer.app */,
+				8191AC60140542F0001CEEC6 /* RGBTrainerTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8191AC3F140542EF001CEEC6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8191AC40140542EF001CEEC6 /* UIKit.framework */,
+				8191AC42140542EF001CEEC6 /* Foundation.framework */,
+				8191AC44140542EF001CEEC6 /* CoreGraphics.framework */,
+				8191AC61140542F0001CEEC6 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8191AC46140542EF001CEEC6 /* RGBTrainer */ = {
+			isa = PBXGroup;
+			children = (
+				8191AC4F140542EF001CEEC6 /* RGBTrainerAppDelegate.h */,
+				8191AC50140542EF001CEEC6 /* RGBTrainerAppDelegate.m */,
+				8191AC52140542EF001CEEC6 /* MainWindow.xib */,
+				8191AC55140542EF001CEEC6 /* RGBTrainerViewController.h */,
+				8191AC56140542EF001CEEC6 /* RGBTrainerViewController.m */,
+				8191AC58140542EF001CEEC6 /* RGBTrainerViewController.xib */,
+				8191AC47140542EF001CEEC6 /* Supporting Files */,
+			);
+			path = RGBTrainer;
+			sourceTree = "<group>";
+		};
+		8191AC47140542EF001CEEC6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8191AC48140542EF001CEEC6 /* RGBTrainer-Info.plist */,
+				8191AC49140542EF001CEEC6 /* InfoPlist.strings */,
+				8191AC4C140542EF001CEEC6 /* main.m */,
+				8191AC4E140542EF001CEEC6 /* RGBTrainer-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8191AC68140542F0001CEEC6 /* RGBTrainerTests */ = {
+			isa = PBXGroup;
+			children = (
+				8191AC6E140542F0001CEEC6 /* RGBTrainerTests.h */,
+				8191AC70140542F0001CEEC6 /* RGBTrainerTests.m */,
+				8191AC69140542F0001CEEC6 /* Supporting Files */,
+			);
+			path = RGBTrainerTests;
+			sourceTree = "<group>";
+		};
+		8191AC69140542F0001CEEC6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8191AC6A140542F0001CEEC6 /* RGBTrainerTests-Info.plist */,
+				8191AC6B140542F0001CEEC6 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		819BA0B6140D9F580033D14A /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				819BA0B7140D9F580033D14A /* RGBTrainerBackGround.png */,
+			);
+			path = resource;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8191AC3B140542EF001CEEC6 /* RGBTrainer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8191AC74140542F0001CEEC6 /* Build configuration list for PBXNativeTarget "RGBTrainer" */;
+			buildPhases = (
+				8191AC38140542EF001CEEC6 /* Sources */,
+				8191AC39140542EF001CEEC6 /* Frameworks */,
+				8191AC3A140542EF001CEEC6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RGBTrainer;
+			productName = RGBTrainer;
+			productReference = 8191AC3C140542EF001CEEC6 /* RGBTrainer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8191AC5F140542F0001CEEC6 /* RGBTrainerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8191AC77140542F0001CEEC6 /* Build configuration list for PBXNativeTarget "RGBTrainerTests" */;
+			buildPhases = (
+				8191AC5B140542F0001CEEC6 /* Sources */,
+				8191AC5C140542F0001CEEC6 /* Frameworks */,
+				8191AC5D140542F0001CEEC6 /* Resources */,
+				8191AC5E140542F0001CEEC6 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8191AC67140542F0001CEEC6 /* PBXTargetDependency */,
+			);
+			name = RGBTrainerTests;
+			productName = RGBTrainerTests;
+			productReference = 8191AC60140542F0001CEEC6 /* RGBTrainerTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8191AC33140542EF001CEEC6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Koichi Onoue";
+			};
+			buildConfigurationList = 8191AC36140542EF001CEEC6 /* Build configuration list for PBXProject "RGBTrainer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8191AC31140542EF001CEEC6;
+			productRefGroup = 8191AC3D140542EF001CEEC6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8191AC3B140542EF001CEEC6 /* RGBTrainer */,
+				8191AC5F140542F0001CEEC6 /* RGBTrainerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8191AC3A140542EF001CEEC6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8191AC4B140542EF001CEEC6 /* InfoPlist.strings in Resources */,
+				8191AC54140542EF001CEEC6 /* MainWindow.xib in Resources */,
+				8191AC5A140542EF001CEEC6 /* RGBTrainerViewController.xib in Resources */,
+				819BA0B8140D9F580033D14A /* RGBTrainerBackGround.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8191AC5D140542F0001CEEC6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8191AC6D140542F0001CEEC6 /* InfoPlist.strings in Resources */,
+				8191AC6F140542F0001CEEC6 /* RGBTrainerTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8191AC5E140542F0001CEEC6 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8191AC38140542EF001CEEC6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8191AC4D140542EF001CEEC6 /* main.m in Sources */,
+				8191AC51140542EF001CEEC6 /* RGBTrainerAppDelegate.m in Sources */,
+				8191AC57140542EF001CEEC6 /* RGBTrainerViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8191AC5B140542F0001CEEC6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8191AC71140542F0001CEEC6 /* RGBTrainerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8191AC67140542F0001CEEC6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8191AC3B140542EF001CEEC6 /* RGBTrainer */;
+			targetProxy = 8191AC66140542F0001CEEC6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8191AC49140542EF001CEEC6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8191AC4A140542EF001CEEC6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		8191AC52140542EF001CEEC6 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8191AC53140542EF001CEEC6 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		8191AC58140542EF001CEEC6 /* RGBTrainerViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8191AC59140542EF001CEEC6 /* en */,
+			);
+			name = RGBTrainerViewController.xib;
+			sourceTree = "<group>";
+		};
+		8191AC6B140542F0001CEEC6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8191AC6C140542F0001CEEC6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8191AC72140542F0001CEEC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8191AC73140542F0001CEEC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8191AC75140542F0001CEEC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RGBTrainer/RGBTrainer-Prefix.pch";
+				INFOPLIST_FILE = "RGBTrainer/RGBTrainer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8191AC76140542F0001CEEC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RGBTrainer/RGBTrainer-Prefix.pch";
+				INFOPLIST_FILE = "RGBTrainer/RGBTrainer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		8191AC78140542F0001CEEC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RGBTrainer.app/RGBTrainer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RGBTrainer/RGBTrainer-Prefix.pch";
+				INFOPLIST_FILE = "RGBTrainerTests/RGBTrainerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		8191AC79140542F0001CEEC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RGBTrainer.app/RGBTrainer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RGBTrainer/RGBTrainer-Prefix.pch";
+				INFOPLIST_FILE = "RGBTrainerTests/RGBTrainerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8191AC36140542EF001CEEC6 /* Build configuration list for PBXProject "RGBTrainer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8191AC72140542F0001CEEC6 /* Debug */,
+				8191AC73140542F0001CEEC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8191AC74140542F0001CEEC6 /* Build configuration list for PBXNativeTarget "RGBTrainer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8191AC75140542F0001CEEC6 /* Debug */,
+				8191AC76140542F0001CEEC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8191AC77140542F0001CEEC6 /* Build configuration list for PBXNativeTarget "RGBTrainerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8191AC78140542F0001CEEC6 /* Debug */,
+				8191AC79140542F0001CEEC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8191AC33140542EF001CEEC6 /* Project object */;
+}
