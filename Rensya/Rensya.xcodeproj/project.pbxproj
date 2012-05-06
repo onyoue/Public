@@ -1,0 +1,460 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		81490FAC153C5E0F007BD862 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81490FAB153C5E0F007BD862 /* UIKit.framework */; };
+		81490FAE153C5E0F007BD862 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81490FAD153C5E0F007BD862 /* Foundation.framework */; };
+		81490FB0153C5E0F007BD862 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81490FAF153C5E0F007BD862 /* CoreGraphics.framework */; };
+		81490FB6153C5E0F007BD862 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 81490FB4153C5E0F007BD862 /* InfoPlist.strings */; };
+		81490FB8153C5E0F007BD862 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 81490FB7153C5E0F007BD862 /* main.m */; };
+		81490FBC153C5E0F007BD862 /* RensyaAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 81490FBB153C5E0F007BD862 /* RensyaAppDelegate.m */; };
+		81490FBF153C5E0F007BD862 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81490FBD153C5E0F007BD862 /* MainStoryboard_iPhone.storyboard */; };
+		81490FC2153C5E0F007BD862 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81490FC0153C5E0F007BD862 /* MainStoryboard_iPad.storyboard */; };
+		81490FC5153C5E0F007BD862 /* RensyaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81490FC4153C5E0F007BD862 /* RensyaViewController.m */; };
+		81490FCD153C5E0F007BD862 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81490FCC153C5E0F007BD862 /* SenTestingKit.framework */; };
+		81490FCE153C5E0F007BD862 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81490FAB153C5E0F007BD862 /* UIKit.framework */; };
+		81490FCF153C5E0F007BD862 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81490FAD153C5E0F007BD862 /* Foundation.framework */; };
+		81490FD7153C5E0F007BD862 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 81490FD5153C5E0F007BD862 /* InfoPlist.strings */; };
+		81490FDA153C5E0F007BD862 /* RensyaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 81490FD9153C5E0F007BD862 /* RensyaTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		81490FD0153C5E0F007BD862 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 81490F9E153C5E0E007BD862 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 81490FA6153C5E0F007BD862;
+			remoteInfo = Rensya;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		81490FA7153C5E0F007BD862 /* Rensya.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rensya.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		81490FAB153C5E0F007BD862 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		81490FAD153C5E0F007BD862 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		81490FAF153C5E0F007BD862 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		81490FB3153C5E0F007BD862 /* Rensya-Info.plist */ = {isa = PBXFileReference; path = "Rensya-Info.plist"; sourceTree = "<group>"; };
+		81490FB5153C5E0F007BD862 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		81490FB7153C5E0F007BD862 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		81490FB9153C5E0F007BD862 /* Rensya-Prefix.pch */ = {isa = PBXFileReference; path = "Rensya-Prefix.pch"; sourceTree = "<group>"; };
+		81490FBA153C5E0F007BD862 /* RensyaAppDelegate.h */ = {isa = PBXFileReference; path = RensyaAppDelegate.h; sourceTree = "<group>"; };
+		81490FBB153C5E0F007BD862 /* RensyaAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RensyaAppDelegate.m; sourceTree = "<group>"; };
+		81490FBE153C5E0F007BD862 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		81490FC1153C5E0F007BD862 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		81490FC3153C5E0F007BD862 /* RensyaViewController.h */ = {isa = PBXFileReference; path = RensyaViewController.h; sourceTree = "<group>"; };
+		81490FC4153C5E0F007BD862 /* RensyaViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RensyaViewController.m; sourceTree = "<group>"; };
+		81490FCB153C5E0F007BD862 /* RensyaTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RensyaTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		81490FCC153C5E0F007BD862 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		81490FD4153C5E0F007BD862 /* RensyaTests-Info.plist */ = {isa = PBXFileReference; path = "RensyaTests-Info.plist"; sourceTree = "<group>"; };
+		81490FD6153C5E0F007BD862 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		81490FD8153C5E0F007BD862 /* RensyaTests.h */ = {isa = PBXFileReference; path = RensyaTests.h; sourceTree = "<group>"; };
+		81490FD9153C5E0F007BD862 /* RensyaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RensyaTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		81490FA4153C5E0F007BD862 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81490FAC153C5E0F007BD862 /* UIKit.framework in Frameworks */,
+				81490FAE153C5E0F007BD862 /* Foundation.framework in Frameworks */,
+				81490FB0153C5E0F007BD862 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81490FC7153C5E0F007BD862 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81490FCD153C5E0F007BD862 /* SenTestingKit.framework in Frameworks */,
+				81490FCE153C5E0F007BD862 /* UIKit.framework in Frameworks */,
+				81490FCF153C5E0F007BD862 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		81490F9C153C5E0E007BD862 = {
+			isa = PBXGroup;
+			children = (
+				81490FB1153C5E0F007BD862 /* Rensya */,
+				81490FD2153C5E0F007BD862 /* RensyaTests */,
+				81490FAA153C5E0F007BD862 /* Frameworks */,
+				81490FA8153C5E0F007BD862 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		81490FA8153C5E0F007BD862 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				81490FA7153C5E0F007BD862 /* Rensya.app */,
+				81490FCB153C5E0F007BD862 /* RensyaTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		81490FAA153C5E0F007BD862 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				81490FAB153C5E0F007BD862 /* UIKit.framework */,
+				81490FAD153C5E0F007BD862 /* Foundation.framework */,
+				81490FAF153C5E0F007BD862 /* CoreGraphics.framework */,
+				81490FCC153C5E0F007BD862 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		81490FB1153C5E0F007BD862 /* Rensya */ = {
+			isa = PBXGroup;
+			children = (
+				81490FBA153C5E0F007BD862 /* RensyaAppDelegate.h */,
+				81490FBB153C5E0F007BD862 /* RensyaAppDelegate.m */,
+				81490FBD153C5E0F007BD862 /* MainStoryboard_iPhone.storyboard */,
+				81490FC0153C5E0F007BD862 /* MainStoryboard_iPad.storyboard */,
+				81490FC3153C5E0F007BD862 /* RensyaViewController.h */,
+				81490FC4153C5E0F007BD862 /* RensyaViewController.m */,
+				81490FB2153C5E0F007BD862 /* Supporting Files */,
+			);
+			path = Rensya;
+			sourceTree = "<group>";
+		};
+		81490FB2153C5E0F007BD862 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				81490FB3153C5E0F007BD862 /* Rensya-Info.plist */,
+				81490FB4153C5E0F007BD862 /* InfoPlist.strings */,
+				81490FB7153C5E0F007BD862 /* main.m */,
+				81490FB9153C5E0F007BD862 /* Rensya-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		81490FD2153C5E0F007BD862 /* RensyaTests */ = {
+			isa = PBXGroup;
+			children = (
+				81490FD8153C5E0F007BD862 /* RensyaTests.h */,
+				81490FD9153C5E0F007BD862 /* RensyaTests.m */,
+				81490FD3153C5E0F007BD862 /* Supporting Files */,
+			);
+			path = RensyaTests;
+			sourceTree = "<group>";
+		};
+		81490FD3153C5E0F007BD862 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				81490FD4153C5E0F007BD862 /* RensyaTests-Info.plist */,
+				81490FD5153C5E0F007BD862 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		81490FA6153C5E0F007BD862 /* Rensya */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 81490FDD153C5E0F007BD862 /* Build configuration list for PBXNativeTarget "Rensya" */;
+			buildPhases = (
+				81490FA3153C5E0F007BD862 /* Sources */,
+				81490FA4153C5E0F007BD862 /* Frameworks */,
+				81490FA5153C5E0F007BD862 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Rensya;
+			productName = Rensya;
+			productReference = 81490FA7153C5E0F007BD862 /* Rensya.app */;
+			productType = "com.apple.product-type.application";
+		};
+		81490FCA153C5E0F007BD862 /* RensyaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 81490FE0153C5E0F007BD862 /* Build configuration list for PBXNativeTarget "RensyaTests" */;
+			buildPhases = (
+				81490FC6153C5E0F007BD862 /* Sources */,
+				81490FC7153C5E0F007BD862 /* Frameworks */,
+				81490FC8153C5E0F007BD862 /* Resources */,
+				81490FC9153C5E0F007BD862 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				81490FD1153C5E0F007BD862 /* PBXTargetDependency */,
+			);
+			name = RensyaTests;
+			productName = RensyaTests;
+			productReference = 81490FCB153C5E0F007BD862 /* RensyaTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		81490F9E153C5E0E007BD862 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Rensya;
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "Koichi Onoue";
+			};
+			buildConfigurationList = 81490FA1153C5E0F007BD862 /* Build configuration list for PBXProject "Rensya" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 81490F9C153C5E0E007BD862;
+			productRefGroup = 81490FA8153C5E0F007BD862 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				81490FA6153C5E0F007BD862 /* Rensya */,
+				81490FCA153C5E0F007BD862 /* RensyaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		81490FA5153C5E0F007BD862 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81490FB6153C5E0F007BD862 /* InfoPlist.strings in Resources */,
+				81490FBF153C5E0F007BD862 /* MainStoryboard_iPhone.storyboard in Resources */,
+				81490FC2153C5E0F007BD862 /* MainStoryboard_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81490FC8153C5E0F007BD862 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81490FD7153C5E0F007BD862 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		81490FC9153C5E0F007BD862 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		81490FA3153C5E0F007BD862 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81490FB8153C5E0F007BD862 /* main.m in Sources */,
+				81490FBC153C5E0F007BD862 /* RensyaAppDelegate.m in Sources */,
+				81490FC5153C5E0F007BD862 /* RensyaViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81490FC6153C5E0F007BD862 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81490FDA153C5E0F007BD862 /* RensyaTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		81490FD1153C5E0F007BD862 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 81490FA6153C5E0F007BD862 /* Rensya */;
+			targetProxy = 81490FD0153C5E0F007BD862 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		81490FB4153C5E0F007BD862 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				81490FB5153C5E0F007BD862 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		81490FBD153C5E0F007BD862 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				81490FBE153C5E0F007BD862 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		81490FC0153C5E0F007BD862 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				81490FC1153C5E0F007BD862 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		81490FD5153C5E0F007BD862 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				81490FD6153C5E0F007BD862 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		81490FDB153C5E0F007BD862 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		81490FDC153C5E0F007BD862 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		81490FDE153C5E0F007BD862 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Rensya/Rensya-Prefix.pch";
+				INFOPLIST_FILE = "Rensya/Rensya-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		81490FDF153C5E0F007BD862 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Rensya/Rensya-Prefix.pch";
+				INFOPLIST_FILE = "Rensya/Rensya-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		81490FE1153C5E0F007BD862 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Rensya.app/Rensya";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Rensya/Rensya-Prefix.pch";
+				INFOPLIST_FILE = "RensyaTests/RensyaTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		81490FE2153C5E0F007BD862 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Rensya.app/Rensya";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Rensya/Rensya-Prefix.pch";
+				INFOPLIST_FILE = "RensyaTests/RensyaTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		81490FA1153C5E0F007BD862 /* Build configuration list for PBXProject "Rensya" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81490FDB153C5E0F007BD862 /* Debug */,
+				81490FDC153C5E0F007BD862 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		81490FDD153C5E0F007BD862 /* Build configuration list for PBXNativeTarget "Rensya" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81490FDE153C5E0F007BD862 /* Debug */,
+				81490FDF153C5E0F007BD862 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		81490FE0153C5E0F007BD862 /* Build configuration list for PBXNativeTarget "RensyaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81490FE1153C5E0F007BD862 /* Debug */,
+				81490FE2153C5E0F007BD862 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 81490F9E153C5E0E007BD862 /* Project object */;
+}
