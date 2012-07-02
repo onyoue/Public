@@ -9,9 +9,7 @@ class BMViewController < UIViewController
 		@toolBar = UIToolbar.alloc.initWithFrame(CGRectMake(0, 416, 320, 44))
 		self.view.addSubview(@toolBar)
 		items = []
-		[['Add Picture', 'addPicture'],
-			['Play', 'play'],
-			['Stop', 'stop']].each do | buttonItem |
+		[['Start', 'start'], ['Stop', 'stop']].each do | buttonItem |
 
 			barButtonItem = UIBarButtonItem.alloc.initWithTitle(buttonItem[0],
 																style:UIBarButtonItemStyleBordered,
@@ -36,7 +34,6 @@ class BMViewController < UIViewController
 
 		url = NSURL.fileURLWithPath("dev/null")
 		settings = { AVSampleRateKey => 44100.0,
-					 #AVFormatIDKey   => 1634492771,#'alac', #KAudioFormatAppleLossless,
 					 AVFormatIDKey   => KAudioFormatAppleLossless,
 					 AVNumberOfChannelsKey => 1,
 					 AVEncoderAudioQualityKey => AVAudioQualityMax
@@ -48,8 +45,6 @@ class BMViewController < UIViewController
 			@recorder.prepareToRecord
 			@recorder.meteringEnabled = true
 			@recorder.record
-			@levelTimer = NSTimer.scheduledTimerWithTimeInterval(0.03, target:self, selector:'levelTimerCallback', userInfo:nil, repeats:true)
-
 		else
 			puts "hello"
 			error = perror[0]
@@ -58,32 +53,12 @@ class BMViewController < UIViewController
 		end
 	end
 
-	def addPicture
-		# imagePickerController = UIImagePickerController.alloc.init
-		# imagePickerController.delegate = self
-		# self.presentModalViewController(imagePickerController, animated:true)
-	end
-
-	# def imagePickerController(picker, didFinishPickingImage:image, editingInfo:editingInfo)
-	# 	animationImages = @bmView.animationImages
-	# 	if animationImages
-	# 		images = NSMutableArray.arrayWithArray(animationImages)
-	# 		images.addObject(image)
-	# 	else
-	# 		images = NSMutableArray.arrayWithObject(image)
-	# 	end
-	# 	@bmView.image = image
-	# 	@bmView.animationImages = images
-	# 	picker.dismissModalViewControllerAnimated(true)
-	# end
-
-	def play
-		# @bmView.setAnimationDuration(0.5)
-		# @bmView.startAnimating
+	def start
+		@levelTimer = NSTimer.scheduledTimerWithTimeInterval(0.03, target:self, selector:'levelTimerCallback', userInfo:nil, repeats:true)
 	end
 
 	def stop
-		# @bmView.stopAnimating
+		@levelTimer.invalidate()
 	end
 
 end

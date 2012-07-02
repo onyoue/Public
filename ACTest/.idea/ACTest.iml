@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="CIDR_MODULE" version="4">
   <component name="NewModuleRootManager">
-    <content url="file://$USER_HOME$/Library/Caches/appCode10/DerivedData/BM1-a5db00ff/Build/Products/Debug-iphonesimulator/BM1.app">
-      <sourceFolder url="file://$USER_HOME$/Library/Caches/appCode10/DerivedData/BM1-a5db00ff/Build/Products/Debug-iphonesimulator/BM1.app" isTestSource="false" />
-    </content>
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$" isTestSource="false" />
     </content>

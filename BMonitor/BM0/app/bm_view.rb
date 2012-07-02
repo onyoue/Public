@@ -18,11 +18,6 @@ class BMView < UIView
 			CGContextAddLineToPoint(c, xpos, @meter[x])
 			CGContextStrokePath(c)
 		end
-
-		CGContextSetLineWidth(c, 5)
-		CGContextMoveToPoint(c, 50, 10)
-		CGContextAddLineToPoint(c, 100, 200)
-		CGContextStrokePath(c)
 	end
 
 	def add_to_meter(value)
